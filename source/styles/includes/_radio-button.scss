@@ -1,0 +1,33 @@
+@import "../core/variables";
+.radio-button {
+	margin: 0;
+	display: flex;
+	width: 100%;
+	&__custom {
+		border: 1px solid #c5c5c5;
+		box-sizing: border-box;
+		border-radius: 20px;
+		min-width: 86px;
+		width: 100%;
+		text-align: center;
+
+		background-color: $light;
+		color: #aeaeae;
+		padding: 10px;
+	}
+
+	&__native:checked + &__custom {
+		background-color: $accent-color;
+		color: $light;
+		border-color: transparentize($color: $accent-color, $amount: 0.5);
+	}
+
+	&__native:focus + &__custom,
+	&__custom:hover {
+		border-color: transparentize($color: $accent-color, $amount: 0.5);
+	}
+
+	&__native:focus-visible + &__custom {
+		box-shadow: white 0 0 0 0.2rem, $accent-color 0 0 0 0.4rem;
+	}
+}
