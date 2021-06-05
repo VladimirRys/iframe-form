@@ -1,0 +1,15 @@
+fieldset
+	legend Platform type
+	// ._title
+	.radio-buttons
+		mixin createRadioButton(id, name, checked = false)
+			p.radio-button
+				-const label = id.charAt(0).toUpperCase() + id.slice(1)
+				if checked
+					input(type="radio" name=name, id=id+'-radio', value=label, checked)._native.visually-hidden
+				else
+					input(type="radio" name=name, id=id+'-radio', value=label)._native.visually-hidden
+				label(for=id+'-radio')._custom=label
+
+		+createRadioButton("mobile", "platform", true)
+		+createRadioButton("desktop", "platform")
