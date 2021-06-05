@@ -1,6 +1,7 @@
 import gulp from "gulp";
 import sass from "gulp-dart-sass";
-import autoprefixer from "gulp-autoprefixer";
+import postcss from "gulp-postcss";
+import autoprefixer from "autoprefixer";
 import shorthand from "gulp-shorthand";
 import clean from "gulp-clean-css";
 import plumber from "gulp-plumber";
@@ -12,9 +13,20 @@ export function styles() {
 			.src(Path.STYLE.source, { sourcemaps: true })
 			.pipe(plumber())
 			.pipe(
-				autoprefixer({
-					cascade: true,
-				})
+				sass({
+					outputStyle: "expanded",
+					indentType: "tab"
+				}).on("error", sass.logError)
+			)
+			.pipe(postcss([autoprefixer()]))
+			.pipe(gulp.dest(Path.STYLE.build, { sourcemaps: "." }));
+	} else {
+		return gulp
+			.src(Path.STYLE.source)
+			.pipe(
+				sass({
+					outputStyle: "compressed",
+				}).on("error", sass.logError)
 			)
 			.pipe(
 				sass({
@@ -22,20 +34,7 @@ export function styles() {
 					indentType: "tab"
 				}).on("error", sass.logError)
 			)
-			.pipe(gulp.dest(Path.STYLE.build, { sourcemaps: "." }));
-	} else {
-		return gulp
-			.src(Path.STYLE.source)
-			.pipe(
-				autoprefixer({
-					cascade: false,
-				})
-			)
-			.pipe(
-				sass({
-					outputStyle: "compressed",
-				}).on("error", sass.logError)
-			)
+			.pipe(postcss([autoprefixer()]))
 			.pipe(shorthand())
 			.pipe(
 				clean(
