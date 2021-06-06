@@ -24,7 +24,7 @@
 body {
 	height: 100%;
 	display: grid;
-	place-content: center;
+	align-content: center;
 	padding: 20px var(--side-padding);
 	font-family: "Ubuntu", "Arial", "Helvetica", sans-serif;
 	box-sizing: border-box;
