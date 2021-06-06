@@ -1,0 +1,33 @@
+@use '../core/variables' as *;
+
+.input {
+	width: 100%;
+	border: 1px solid #c5c5c5;
+
+	background-color: #fff;
+
+	border-radius: 20px;
+
+	font-size: 1rem;
+	line-height: 1;
+	padding: 10px 15px;
+
+	color: #3b3b3b;
+
+	&:focus {
+		outline: none;
+	}
+
+	&:hover,
+	&:focus {
+		border-color: $accent-color;
+	}
+
+	/* &:focus-visible {
+		box-shadow: white 0 0 0 0.2rem, $accent-color 0 0 0 0.4rem;
+	} */
+
+	&:invalid {
+		border-color: tomato;
+	}
+}

@@ -1,0 +1,26 @@
+@use '../core/variables' as *;
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+:root {
+	--side-padding: 33px;
+	font-size: 10px;
+
+	@media (min-width: $tablet-bp) {
+		--side-padding: 44px;
+		font-size: 12px;
+	}
+
+	@media (min-width: $desktop-bp) {
+		font-size: 14px;
+	}
+}
+body {
+	padding: 0 var(--side-padding);
+	font-family: "Ubuntu", "Arial", "Helvetica", sans-serif;
+	box-sizing: border-box;
+}

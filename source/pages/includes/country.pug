@@ -4,14 +4,14 @@
 fieldset
 	legend Country
 	.custom-select
-		select#country-select(name="country"  aria-label="Select a country")._native
+		select#country-select(name="country"  aria-label="Select a country")._native.input
 			option(value="", selected, disabled) Select a country
 			each country in countries
 				option(value=country)=country
-		// Hide the custom select from AT (e.g. SR) using aria-hidden
-		._custom(aria-hidden='true')
+		//- Hide the custom select from AT (e.g. SR) using aria-hidden
+		._custom.input(aria-hidden='true')
 			._trigger Select a country
-			._options
+			._options.input
 				each country in countries
 					._option(data-value=country)=country
 

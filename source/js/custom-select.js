@@ -26,7 +26,7 @@ let optionHoveredIndex = -1;
 const activeClass = "custom-select__custom--active";
 
 // Toggle custom select visibility when clicking the box
-customTrigger.addEventListener("click", () => {
+custom.addEventListener("click", () => {
 	const isClosed = !custom.classList.contains(activeClass);
 
 	if (isClosed) {

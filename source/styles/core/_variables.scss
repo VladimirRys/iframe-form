@@ -1,5 +1,11 @@
-$accent: rgb(255, 99, 71);
-$secondary: rgb(67, 102, 255);
+$tablet-bp: 700px;
+$mob-only-bp: $tablet-bp - 1px;
 
-$mobile-offset: 1rem;
-$container-width: 1400px;
+$form-width: 945px;
+$desktop-bp: $form-width + 100px;
+$not-desktop-bp: $desktop-bp - 1px;
+
+$border-color: #dadada;
+$accent-color: #291B68;
+
+$light: #fff;

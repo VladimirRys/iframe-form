@@ -1,0 +1,9 @@
+fieldset
+	legend.bold The amount of traffic per landing
+	input#traffic(type="text" name="traffic" value="100 000" inputmode="numeric" pattern="[0-9 ]*").input
+	//- input#traffic-range(type="range" name="traffic")
+
+	.range-slider(style='--min:0; --max:100; --value:75; --text-value:"75"; --suffix:"%"')
+		input(type='range' min='0' max='100' value='75' name="traffic" oninput="this.parentNode.style.setProperty('--value',this.value); this.parentNode.style.setProperty('--text-value', JSON.stringify(this.value))")
+		.range-slider__progress
+

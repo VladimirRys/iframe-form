@@ -1,0 +1,21 @@
+@use '../core/variables' as *;
+.small {
+	font-size: 0.667rem;
+	line-height: 1.33;
+	margin: 0;
+	padding-left: 30px;
+
+	color: #9c9c9c;
+	small {
+		font-size: inherit;
+	}
+
+	@media (max-width: $mob-only-bp) {
+		margin-bottom: 20px;
+	}
+
+	@media (min-width: $desktop-bp) {
+		font-size: 0.86rem;
+		grid-column-end: span 2;
+	}
+}

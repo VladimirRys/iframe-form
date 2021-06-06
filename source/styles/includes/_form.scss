@@ -1,0 +1,62 @@
+@use '../core/variables' as *;
+
+form {
+	display: grid;
+	max-width: 945px;
+	margin-left: auto;
+	margin-right: auto;
+	align-items: start;
+
+	@media (min-width: $tablet-bp) {
+		grid-template-columns: 1fr 1fr;
+		gap: 1px;
+	}
+
+	@media (min-width: $desktop-bp) {
+		grid-template-columns: 262px 165px 262px auto;
+		gap: 20px 30px;
+		padding: 20px 0 20px;
+	}
+}
+
+fieldset {
+	border: none;
+	margin: 0;
+	padding: 0;
+	@media (max-width: $not-desktop-bp) {
+		padding: 0 20px 20px;
+		margin-top: 20px;
+	}
+
+	@media (max-width: $mob-only-bp) {
+		&:not(:last-of-type) {
+			border-bottom: 1px solid $border-color;
+		}
+	}
+
+	@media (min-width: $tablet-bp) and (max-width: $not-desktop-bp) {
+		padding-bottom: 30px;
+		&:first-of-type,
+		&:nth-of-type(2) {
+			border-bottom: 1px solid $border-color;
+		}
+	}
+}
+
+legend {
+	display: block;
+	margin-bottom: 15px;
+
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 1.17;
+
+	color: #000000;
+	&::after {
+		content: ":";
+	}
+
+	&.bold {
+		font-weight: 500;
+	}
+}
