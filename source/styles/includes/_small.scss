@@ -10,10 +10,6 @@
 		font-size: inherit;
 	}
 
-	@media (max-width: $mob-only-bp) {
-		margin-bottom: 20px;
-	}
-
 	@media (min-width: $desktop-bp) {
 		font-size: 0.86rem;
 		grid-column-end: span 2;

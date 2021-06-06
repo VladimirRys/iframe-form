@@ -1,8 +1,8 @@
-$tablet-bp: 700px;
+$tablet-bp: 540px;
 $mob-only-bp: $tablet-bp - 1px;
 
 $form-width: 945px;
-$desktop-bp: $form-width + 100px;
+$desktop-bp: $form-width;
 $not-desktop-bp: $desktop-bp - 1px;
 
 $border-color: #dadada;

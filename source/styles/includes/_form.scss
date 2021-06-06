@@ -2,18 +2,19 @@
 
 form {
 	display: grid;
-	max-width: 945px;
+	max-width: $form-width;
 	margin-left: auto;
 	margin-right: auto;
 	align-items: start;
+	gap: 20px;
 
 	@media (min-width: $tablet-bp) {
 		grid-template-columns: 1fr 1fr;
-		gap: 1px;
+		gap: 30px 0;
 	}
 
 	@media (min-width: $desktop-bp) {
-		grid-template-columns: 262px 165px 262px auto;
+		grid-template-columns: 27.72% 1fr 27.72% 1fr;
 		gap: 20px 30px;
 		padding: 20px 0 20px;
 	}
@@ -24,21 +25,21 @@ fieldset {
 	margin: 0;
 	padding: 0;
 	@media (max-width: $not-desktop-bp) {
-		padding: 0 20px 20px;
-		margin-top: 20px;
+		padding: 0 20px;
 	}
 
 	@media (max-width: $mob-only-bp) {
 		&:not(:last-of-type) {
 			border-bottom: 1px solid $border-color;
+			padding-bottom: 20px;
 		}
 	}
 
 	@media (min-width: $tablet-bp) and (max-width: $not-desktop-bp) {
-		padding-bottom: 30px;
 		&:first-of-type,
 		&:nth-of-type(2) {
 			border-bottom: 1px solid $border-color;
+			padding-bottom: 30px;
 		}
 	}
 }
