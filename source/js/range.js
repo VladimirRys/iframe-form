@@ -1,6 +1,8 @@
 import IMask from "imask";
+import { updateTraffic } from "./calculator.js";
 
 const rangeWrapper = document.querySelector(".range-slider");
+const range = rangeWrapper.querySelector("input");
 const inputNumber = document.getElementById("traffic");
 
 const numberMask = IMask(inputNumber, {
@@ -10,13 +12,19 @@ const numberMask = IMask(inputNumber, {
 	thousandsSeparator: " ",
 });
 
-rangeWrapper.addEventListener("input", (evt) => {
-	rangeWrapper.style.setProperty("--value", evt.target.value);
+range.addEventListener("input", () => {
+	rangeWrapper.style.setProperty("--value", range.value);
 });
 
-rangeWrapper.addEventListener("change", (evt) => {
-	const newValue = evt.target.value;
-	inputNumber.value = newValue;
-	numberMask.updateValue(newValue);
+range.addEventListener("change", () => {
+	inputNumber.value = range.value;
+	numberMask.updateValue(range.value);
 	inputNumber.value = numberMask.value;
+	updateTraffic(range.value);
+});
+
+inputNumber.addEventListener("input", () => {
+	range.value = numberMask.unmaskedValue;
+	rangeWrapper.style.setProperty("--value", range.value);
+	updateTraffic(range.value);
 });

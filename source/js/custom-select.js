@@ -1,3 +1,5 @@
+import { updateCountryCoefficient } from "./calculator.js";
+
 /* Features needed to make the selectCustom work for mouse users.
 
 - Toggle custom select visibility when clicking the "box"
@@ -16,7 +18,9 @@ const native = selectWrapper.querySelector(".custom-select__native");
 const custom = selectWrapper.querySelector(".custom-select__custom");
 const customTrigger = custom.querySelector(".custom-select__trigger");
 const customOptionsWrapper = custom.querySelector(".custom-select__options");
-const customOptions = Array.from(customOptionsWrapper.querySelectorAll(".custom-select__option"));
+const customOptions = Array.from(
+	customOptionsWrapper.querySelectorAll(".custom-select__option")
+);
 const optionsCount = customOptions.length;
 // const defaultLabel = customTrigger.getAttribute("data-value");
 
@@ -86,7 +90,9 @@ function updateCustomSelectChecked(value, text) {
 	const elPrevOption = customOptionsWrapper.querySelector(
 		`[data-value="${prevValue}"`
 	);
-	const elOption = customOptionsWrapper.querySelector(`[data-value="${value}"`);
+	const elOption = customOptionsWrapper.querySelector(
+		`[data-value="${value}"`
+	);
 
 	const selectedClass = "custom-select__option--selected";
 
@@ -96,6 +102,7 @@ function updateCustomSelectChecked(value, text) {
 
 	if (elOption) {
 		elOption.classList.add(selectedClass);
+		updateCountryCoefficient(elOption.dataset.coefficient);
 	}
 
 	customTrigger.textContent = text;
