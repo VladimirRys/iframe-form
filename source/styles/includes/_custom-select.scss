@@ -14,6 +14,15 @@
 		color: #aeaeae;
 		cursor: pointer;
 
+		background-image: url("../img/select-arrow.svg");
+
+		background-size: 20px 6px;
+		background-repeat: no-repeat;
+		background-position: center right 15px;
+		padding-right: 20px + 15px * 2;
+
+		text-overflow: ellipsis;
+
 		&:hover {
 			color: $accent-color;
 		}
@@ -44,27 +53,15 @@
 
 	&__native {
 		appearance: none;
-
-		background-image: url("data:image/svg+xml;utf8,<svg fill='#C8C8C8' width='20' height='6' viewBox='0 0 20 6' xmlns='http://www.w3.org/2000/svg'><path d='M10 5.22L.97.1a.9.9 0 00-.8 0c-.23.13-.23.33 0 .46L9.6 5.9a.9.9 0 00.8 0L19.83.55c.11-.06.17-.15.17-.23 0-.08-.05-.16-.17-.22a.9.9 0 00-.8 0L10 5.22z'/></svg>");
-
-		// background-repeat: no-repeat;
-		// background-position-x: 100%;
-		// background-position-y: 0.8rem;
-
 		option {
 			font-size: 1rem;
 		}
 	}
 
 	&__trigger {
-		position: relative;
-		&::after {
-			content: "▾";
-			position: absolute;
-			top: 0;
-			right: 0.8rem;
-			color: black;
-		}
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
 	}
 
 	&__options {
