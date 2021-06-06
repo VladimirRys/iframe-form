@@ -1,17 +1,15 @@
--
-	const countries = ["New Zealand", "Australia", "Norway"];
 
 fieldset
-	legend Country
+	legend=countryTitle
 	.custom-select
-		select#country-select(name="country"  aria-label="Select a country")._native.input
-			option(value="", selected, disabled) Select a country
+		select#country-select(name="country"  aria-label=countryLabel)._native.input
+			option(value="", selected, disabled)=countryLabel
 			each country in countries
-				option(value=country)=country
+				option(value=country.name, data-coefficient=country.coefficient)=country.name
 		//- Hide the custom select from AT (e.g. SR) using aria-hidden
 		._custom.input(aria-hidden='true')
-			._trigger Select a country
+			._trigger=countryLabel
 			._options.input
 				each country in countries
-					._option(data-value=country)=country
+					._option(data-value=country.name,  data-coefficient=country.coefficient)=country.name
 

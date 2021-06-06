@@ -60,7 +60,7 @@
 		var(--max)
 	); // default value ("--value" is used in single-range markup)
 	--value-b: var(--value, 0); // default value
-	--text-value-a: var(--text-value, "");
+
 
 	--completed-a: calc(
 		(var(--value-a) - var(--min)) / (var(--max) - var(--min)) * 100
@@ -112,30 +112,6 @@
 	width: 100%;
 	margin-top: 15px;
 
-	&[data-ticks-position="top"] {
-		--flip-y: 1;
-	}
-
-
-	&__values {
-		position: relative;
-		top: 50%;
-		line-height: 0;
-		text-align: justify;
-		width: 100%;
-		pointer-events: none;
-		margin: 0 auto;
-		z-index: 5;
-
-		// trick so "justify" will work
-		&::after {
-			content: "";
-			width: 100%;
-			display: inline-block;
-			height: 0;
-			background: red;
-		}
-	}
 
 	&__progress {
 		--start-end: calc(var(--thumb-size) / 2);

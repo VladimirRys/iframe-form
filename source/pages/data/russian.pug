@@ -1,0 +1,31 @@
+-
+	const TITLE = "Увеличить Профит"
+	/* ___ Platforms ___ */
+
+	const platformsTitle = "Тип платформы";
+	const platforms = [
+			{name: "Mobile", id: 'mobile', coefficient: '1'},
+			{name: "Desktop", id: 'desk',  coefficient: '1.2'}
+		]
+
+	/* ___ Countries ___ */
+
+	const countryTitle = "Страна";
+	const countryLabel = "Выберите страну";
+	const countries = [
+			{ name: "New Zealand", coefficient: '1.1'},
+			{ name: "Australia", coefficient: '1.5'},
+			{ name: "Norway", coefficient: '1.3'}
+		];
+
+	/* ___ Traffic ___ */
+	const trafficTitle = "Количество трафика на ленд"
+
+
+	const initValue = 100000;
+	const min = 0;
+	const max = initValue * 2;
+
+	const costTitle = "Ориентировочный доход"
+
+	const NOTE = ["Все показатели стоимости рассчитаны справочно.", "Используется среднее значение от общей статистики.", "Данные могут отличаться от показателей в вашем аккаунте."]

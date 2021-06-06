@@ -1,13 +1,6 @@
--
-	const initValue = 100000;
-	const min = 0;
-	const max = initValue * 2;
-
-
 fieldset
-	legend.bold#traffic-title The amount of traffic per landing
+	legend.bold#traffic-title=trafficTitle
 	input#traffic(type="text" name="traffic" value="100 000" inputmode="numeric" pattern="[0-9 ]*", aria-hidden="true").input
-	//- input#traffic-range(type="range" name="traffic")
 
 	.range-slider(style=`--min:${min}; --max:${max}; --value:${initValue}; --text-value:"75"; --suffix:"%"`)
 		input(type='range' min=min max=max value=initValue, name="traffic-range", aria-labelledby="traffic-title")#traffic-range
