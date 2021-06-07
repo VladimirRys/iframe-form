@@ -27,13 +27,17 @@ function updateByPlatform(radio) {
 }
 
 // Parse JSON
+let DATA;
 
-export function updatebyCountry(country) {
-	fetch("../data/countries.json")
-		.then((response) => response.json())
-		.then((data) => {
-			geo = data.countries[country];
-		}, calcOutput());
+fetch("../data/countries.json")
+	.then((response) => response.json())
+	.then((data) => {
+		DATA = data;
+	});
+
+export function updateByCountry(country) {
+	geo = DATA.countries[country];
+	calcOutput();
 }
 
 export function updateByTraffic(value) {

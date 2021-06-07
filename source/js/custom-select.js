@@ -1,4 +1,4 @@
-import { updatebyCountry } from "./calculator.js";
+import { updateByCountry } from "./calculator.js";
 
 /* Features needed to make the selectCustom work for mouse users.
 
@@ -87,6 +87,8 @@ function updateCustomSelectHovered(newIndex) {
 function updateCustomSelectChecked(value, text) {
 	const prevValue = optionChecked;
 
+	updateByCountry(value);
+
 	const elPrevOption = customOptionsWrapper.querySelector(
 		`[data-value="${prevValue}"`
 	);
@@ -102,7 +104,6 @@ function updateCustomSelectChecked(value, text) {
 
 	if (elOption) {
 		elOption.classList.add(selectedClass);
-		updatebyCountry(elOption.dataset.value);
 	}
 
 	customTrigger.textContent = text;
