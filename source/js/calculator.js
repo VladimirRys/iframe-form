@@ -1,3 +1,4 @@
+import { formatNumber } from "./formatNumbers.js";
 // INIT VALUES
 let platform = "mobile";
 let traffic = 100000;
@@ -43,5 +44,6 @@ export function updateByTraffic(value) {
 export function calcOutput() {
 	const result = (traffic / geo[platform].CR) * geo[platform].CPS;
 
-	output.textContent = result.toFixed(2).toString().replace(".", ",") + " ";
+	output.textContent =
+		formatNumber(result.toFixed(2).toString().replace(".", ",")) + " ";
 }

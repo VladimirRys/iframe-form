@@ -1,5 +1,7 @@
 import { updateByTraffic } from "./calculator.js";
 
+import { removeSpacesFromNumber, formatNumber } from "./formatNumbers.js";
+
 const rangeWrapper = document.querySelector(".range-slider");
 const range = rangeWrapper.querySelector("input");
 const inputNumber = document.getElementById("traffic");
@@ -32,11 +34,3 @@ inputNumber.addEventListener("input", () => {
 	rangeWrapper.style.setProperty("--value", newValue);
 	updateByTraffic(newValue);
 });
-
-function formatNumber(number) {
-	return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
-}
-
-function removeSpacesFromNumber(string) {
-	return parseInt(string.replace(/[^0-9.]/g, ""));
-}
