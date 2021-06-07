@@ -1,37 +1,47 @@
-let platformCoefficient = 1;
-let countryCoefficient = 1;
+// INIT VALUES
+let platform = "mobile";
 let traffic = 100000;
-const CR = 1000;
+let geo = {
+	desktop: {
+		CR: 1.4,
+		CPS: 0.01,
+	},
+	mobile: { CR: 11.6, CPS: 0.015 },
+};
 
+// ____ Radio buttons
 const platformsRadios = document.querySelectorAll(".radio-button__native");
 const output = document.querySelector("output");
-
 platformsRadios.forEach((radio) => {
-	updatePlatformCoefficient(radio);
-
+	updateByPlatform(radio);
 	radio.addEventListener("change", (evt) => {
-		updatePlatformCoefficient(evt.target);
+		updateByPlatform(evt.target);
 	});
 });
-
-function updatePlatformCoefficient(radio) {
+function updateByPlatform(radio) {
 	if (radio.checked) {
-		platformCoefficient = radio.dataset.coefficient;
-		updateOutput();
+		platform = radio.value;
+		calcOutput();
 	}
 }
 
-export function updateCountryCoefficient(value) {
-	countryCoefficient = value;
-	updateOutput();
+// Parse JSON
+
+export function updatebyCountry(country) {
+	fetch("../data/countries.json")
+		.then((response) => response.json())
+		.then((data) => {
+			geo = data.countries[country];
+		}, calcOutput());
 }
 
-export function updateTraffic(value) {
+export function updateByTraffic(value) {
 	traffic = value;
-	updateOutput();
+	calcOutput();
 }
 
-export function updateOutput() {
-	const result = (traffic / CR) * platformCoefficient * countryCoefficient;
+export function calcOutput() {
+	const result = (traffic / geo[platform].CR) * geo[platform].CPS;
+
 	output.textContent = result.toFixed(2).toString().replace(".", ",") + " ";
 }

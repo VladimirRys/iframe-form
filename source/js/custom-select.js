@@ -1,4 +1,4 @@
-import { updateCountryCoefficient } from "./calculator.js";
+import { updatebyCountry } from "./calculator.js";
 
 /* Features needed to make the selectCustom work for mouse users.
 
@@ -102,7 +102,7 @@ function updateCustomSelectChecked(value, text) {
 
 	if (elOption) {
 		elOption.classList.add(selectedClass);
-		updateCountryCoefficient(elOption.dataset.coefficient);
+		updatebyCountry(elOption.dataset.value);
 	}
 
 	customTrigger.textContent = text;

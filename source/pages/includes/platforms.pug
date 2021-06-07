@@ -3,12 +3,12 @@ fieldset
 	.radio-buttons
 		mixin createRadioButton(platform, id, name, checked)
 			p.radio-button
-				if checked
-					input(type="radio" name=name, id=`${id}-radio`, value=platform, checked)._native.visually-hidden
+				if id === 'mobile'
+					input(type="radio" name=name, id=`${id}-radio`, value=id, checked)._native.visually-hidden
 				else
-					input(type="radio" name=name, id=`${id}-radio`, value=platform)._native.visually-hidden
+					input(type="radio" name=name, id=`${id}-radio`, value=id)._native.visually-hidden
 				label(for=`${id}-radio`)._custom=platform
 
 		each platform, id in platforms
-			+createRadioButton(platform.name[lang], id, "platform", !index)
+			+createRadioButton(platform.name[lang], id, "platform")
 
