@@ -1,14 +1,14 @@
 
 fieldset
-	legend=countryTitle
+	legend=titles.countries[lang]
 	.custom-select
-		select#country-select(name="country"  aria-label=countryLabel)._native.input
-			option(value="", selected, disabled)=countryLabel
+		select#country-select(name="country"  aria-label=titles.countriesLabel[lang])._native.input
+			option(value="", selected, disabled)=titles.countriesLabel[lang]
 			each country in countries
 				option(value=country.name, data-coefficient=country.coefficient)=country.name
 		//- Hide the custom select from AT (e.g. SR) using aria-hidden
 		._custom.input(aria-hidden='true')
-			._trigger=countryLabel
+			._trigger=titles.countriesLabel[lang]
 			._options.input
 				each country in countries
 					._option(data-value=country.name,  data-coefficient=country.coefficient)=country.name

@@ -3,7 +3,8 @@ extends common/_base
 block variables
 	include ./data/russian
 	-
-		title = TITLE
+		lang = "ru"
+		title =	buttonText[lang]
 
 block head
 	link(rel='preconnect' href='https://fonts.gstatic.com')
@@ -16,9 +17,10 @@ block body
 		include ./includes/country
 		include ./includes/traffic
 		include ./includes/cost
-		ul.small
-			each text in NOTE
-				li
-					small=text
 
-		button(type="submit")=TITLE
+		ul.small
+			each note in notes
+				li
+					small=note[lang]
+
+		a(href="https://app.propush.me/#/signUp").button=title

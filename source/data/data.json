@@ -1,0 +1,61 @@
+{
+	"buttonText": {
+		"ru": "Увеличить Профит",
+		"en": "Increase Profit"
+	},
+	"titles": {
+		"platforms": {
+			"ru": "Тип платформы",
+			"en": ""
+		},
+		"countries": {
+			"ru": "Страна",
+			"en": ""
+		},
+		"countriesLabel": {
+			"ru": "Выберите страну",
+			"en": ""
+		},
+		"traffic": {
+			"ru": "Количество трафика на ленд",
+			"en": ""
+		},
+		"cost": {
+			"ru": "Ориентировочный доход",
+			"en": ""
+		}
+	},
+	"platforms": {
+		"mobile": {
+			"name": {
+				"ru": "Mobile",
+				"en": "Mobile"
+			}
+		},
+		"desk": {
+			"name": {
+				"ru": "Desktop",
+				"en": "Desktop"
+			}
+		}
+	},
+	"traffic": {
+		"min": 0,
+		"max": 50000000,
+		"startValue": 40000000
+	},
+	"notes": [
+		{
+			"ru": "Все показатели стоимости рассчитаны справочно.",
+			"en": "All cost indicators are calculated for reference."
+		},
+		{
+			"ru": "Используется среднее значение от общей статистики.",
+			"en": "The average of the total statistics is used."
+		},
+		{
+			"ru": "Данные могут отличаться от показателей в вашем аккаунте.",
+			"en": "The data may differ from the metrics in your account."
+		}
+	]
+}

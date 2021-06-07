@@ -30,4 +30,8 @@ export const Path = {
 		source: Base.SOURCE + "assets/**/*",
 		build: Base.BUILD,
 	},
+
+	DATA: {
+		source: Base.SOURCE + "data/",
+	},
 };

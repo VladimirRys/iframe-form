@@ -1,6 +1,6 @@
 @use '../core/variables' as *;
 
-button {
+.button {
 	background-color: #fff131;
 	box-shadow: 0px 4px 4px rgba(255, 241, 49, 0.25);
 	border-radius: 30px;
@@ -10,6 +10,7 @@ button {
 	text-transform: uppercase;
 	color: $accent-color;
 	font-size: 14px;
+	text-decoration: none;
 
 	&:focus {
 		outline: none;

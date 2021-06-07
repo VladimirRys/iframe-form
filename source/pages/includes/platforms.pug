@@ -1,15 +1,14 @@
 fieldset
-	legend=platformsTitle
-	// ._title
+	legend=titles.platforms[lang]
 	.radio-buttons
-		mixin createRadioButton(platform, name, checked)
+		mixin createRadioButton(platform, id, name, checked)
 			p.radio-button
 				if checked
-					input(type="radio" name=name, id=platform.id+'-radio', value=platform.name, checked, data-coefficient=platform.coefficient)._native.visually-hidden
+					input(type="radio" name=name, id=`${id}-radio`, value=platform, checked)._native.visually-hidden
 				else
-					input(type="radio" name=name, id=platform.id+'-radio', value=platform.name, data-coefficient=platform.coefficient)._native.visually-hidden
-				label(for=platform.id+'-radio')._custom=platform.name
+					input(type="radio" name=name, id=`${id}-radio`, value=platform)._native.visually-hidden
+				label(for=`${id}-radio`)._custom=platform
 
-		each platform, index in platforms
-			+createRadioButton(platform, "platform", !index)
+		each platform, id in platforms
+			+createRadioButton(platform.name[lang], id, "platform", !index)
 
