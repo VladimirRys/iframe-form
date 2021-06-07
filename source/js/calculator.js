@@ -29,7 +29,7 @@ function updateByPlatform(radio) {
 // Parse JSON
 let DATA;
 
-fetch("../data/countries.json")
+fetch("./data/countries.json")
 	.then((response) => response.json())
 	.then((data) => {
 		DATA = data;
