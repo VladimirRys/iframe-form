@@ -70,41 +70,21 @@
 		top: calc(100% + 5px);
 		left: 0;
 		box-sizing: border-box;
-
-		max-height: 128px;
-		overflow-y: auto;
 		z-index: 2;
 		display: none;
 		padding: 0;
 
-		scrollbar-width: thin;
-		scrollbar-color: $accent-color $border-color;
-
 		&:hover {
 			border-color: #c5c5c5;
 		}
+	}
 
-		&::-webkit-scrollbar {
-			width: 23px;
-			// height: 80px;
-			border-radius: 15px;
-			background-color: transparent;
-		}
-
-		&::-webkit-scrollbar-track,
-		&::-webkit-scrollbar-thumb {
-			border: 10px solid transparent;
-			border-width: 25px 10px;
-			background-clip: padding-box;
-		}
-
-		&::-webkit-scrollbar-track {
-			background-color: $border-color;
-		}
-
-		&::-webkit-scrollbar-thumb {
-			background-color: $accent-color;
-		}
+	&__scroll {
+		margin-top: 15px;
+		margin-bottom: 15px;
+		margin-right: 10px;
+		max-height: 98px;
+		overflow-y: auto;
 	}
 
 	&__custom--active &__options {
@@ -124,6 +104,13 @@
 		/* Line-icone */
 
 		color: #c8c8c8;
+
+		&:first-of-type {
+			padding-top: 0;
+		}
+		&:last-of-type {
+			padding-bottom: 0;
+		}
 
 		&::before {
 			content: "";

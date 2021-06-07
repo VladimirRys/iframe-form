@@ -19,14 +19,36 @@
 		font-size: 14px;
 	}
 
-	height: 100%;
+	scrollbar-width: thin;
+	scrollbar-color: $accent-color $border-color;
 }
+
 body {
-	height: 100%;
+	min-height: 100vh;
 	display: grid;
 	align-content: center;
 	padding: 20px var(--side-padding);
 	font-family: "Ubuntu", "Arial", "Helvetica", sans-serif;
 	box-sizing: border-box;
 	background-color: $light;
+}
+
+::-webkit-scrollbar {
+	width: 3px;
+	height: 3px;
+	border-radius: 15px;
+	background: transparent;
+}
+
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-thumb {
+	border-radius: 15px;
+}
+
+::-webkit-scrollbar-track {
+	background-color: $border-color;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: $accent-color;
 }

@@ -10,5 +10,6 @@ fieldset
 		._custom.input(aria-hidden='true')
 			._trigger=titles.countriesLabel[lang]
 			._options.input
-				each options, country in countries
-					._option(data-value=country)=country
+				._scroll
+					each options, country in countries
+						._option(data-value=country)=country
