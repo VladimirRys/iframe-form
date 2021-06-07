@@ -8,8 +8,7 @@
     "scripts": {
         "dev": "npx gulp",
         "build": "npx gulp build",
-        "test": "eslint source/**/*.js & npx gulp test",
-        "deploy": "npx gulp deploy"
+        "test": "eslint source/**/*.js & npx gulp test"
     },
     "author": "Arthur Baileys Li",
     "license": "ISC",
