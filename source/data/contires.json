@@ -1,0 +1,304 @@
+{
+	"countries": {
+		"USA": {
+			"mobile": {
+				"CR": 2.5,
+				"CPS": 0.114
+			},
+			"desktop": {
+				"CR": 2.1,
+				"CPS": 0.063
+			}
+		},
+		"Thailand": {
+			"mobile": {
+				"CR": 6.5,
+				"CPS": 0.024
+			},
+			"desktop": {
+				"CR": 7.5,
+				"CPS": 0.012
+			}
+		},
+		"SouthAfrica": {
+			"mobile": {
+				"CR": 4,
+				"CPS": 0.098
+			},
+			"desktop": {
+				"CR": 3.5,
+				"CPS": 0.043
+			}
+		},
+		"Malaysia": {
+			"mobile": {
+				"CR": 15.6,
+				"CPS": 0.007
+			},
+			"desktop": {
+				"CR": 5,
+				"CPS": 0.017
+			}
+		},
+		"India": {
+			"mobile": {
+				"CR": 21.2,
+				"CPS": 0.001
+			},
+			"desktop": {
+				"CR": 4.7,
+				"CPS": 0.003
+			}
+		},
+		"Mexico": {
+			"mobile": {
+				"CR": 6,
+				"CPS": 0.023
+			},
+			"desktop": {
+				"CR": 6.2,
+				"CPS": 0.003
+			}
+		},
+		"Brazil": {
+			"mobile": {
+				"CR": 4.8,
+				"CPS": 0.016
+			},
+			"desktop": {
+				"CR": 8,
+				"CPS": 0.003
+			}
+		},
+		"Canada": {
+			"mobile": {
+				"CR": 2.4,
+				"CPS": 0.087
+			},
+			"desktop": {
+				"CR": 1.8,
+				"CPS": 0.085
+			}
+		},
+		"Italy": {
+			"mobile": {
+				"CR": 1.98,
+				"CPS": 0.059
+			},
+			"desktop": {
+				"CR": 2.6,
+				"CPS": 0.049
+			}
+		},
+		"Germany": {
+			"mobile": {
+				"CR": 1.8,
+				"CPS": 0.054
+			},
+			"desktop": {
+				"CR": 1.93,
+				"CPS": 0.033
+			}
+		},
+		"New Zealand": {
+			"mobile": {
+				"CR": 2.5,
+				"CPS": 0.102
+			},
+			"desktop": {
+				"CR": 3,
+				"CPS": 0.102
+			}
+		},
+		"Australia": {
+			"mobile": {
+				"CR": 13.2,
+				"CPS": 0.027
+			},
+			"desktop": {
+				"CR": 2.9,
+				"CPS": 0.066
+			}
+		},
+		"Colombia": {
+			"mobile": {
+				"CR": 5.8,
+				"CPS": 0.017
+			},
+			"desktop": {
+				"CR": 10,
+				"CPS": 0.002
+			}
+		},
+		"Peru": {
+			"mobile": {
+				"CR": 5.3,
+				"CPS": 0.019
+			},
+			"desktop": {
+				"CR": 9.6,
+				"CPS": 0.004
+			}
+		},
+		"UnitedKingdom": {
+			"mobile": {
+				"CR": 1.9,
+				"CPS": 0.081
+			},
+			"desktop": {
+				"CR": 1.5,
+				"CPS": 0.054
+			}
+		},
+		"Indonesia": {
+			"mobile": {
+				"CR": 19,
+				"CPS": 0.003
+			},
+			"desktop": {
+				"CR": 8,
+				"CPS": 0.003
+			}
+		},
+		"Philippines": {
+			"mobile": {
+				"CR": 8.6,
+				"CPS": 0.009
+			},
+			"desktop": {
+				"CR": 6.3,
+				"CPS": 0.006
+			}
+		},
+		"France": {
+			"mobile": {
+				"CR": 2,
+				"CPS": 0.076
+			},
+			"desktop": {
+				"CR": 1.8,
+				"CPS": 0.026
+			}
+		},
+		"Pakistan": {
+			"mobile": {
+				"CR": 38.4,
+				"CPS": 0.001
+			},
+			"desktop": {
+				"CR": 5.5,
+				"CPS": 0.004
+			}
+		},
+		"Spain": {
+			"mobile": {
+				"CR": 1.9,
+				"CPS": 0.039
+			},
+			"desktop": {
+				"CR": 2.3,
+				"CPS": 0.008
+			}
+		},
+		"Russian": {
+			"mobile": {
+				"CR": 6.9,
+				"CPS": 0.01
+			},
+			"desktop": {
+				"CR": 3,
+				"CPS": 0.006
+			}
+		},
+		"Poland": {
+			"mobile": {
+				"CR": 2.6,
+				"CPS": 0.038
+			},
+			"desktop": {
+				"CR": 3.6,
+				"CPS": 0.011
+			}
+		},
+		"Nigeria": {
+			"mobile": {
+				"CR": 9.7,
+				"CPS": 0.015
+			},
+			"desktop": {
+				"CR": 7.5,
+				"CPS": 0.015
+			}
+		},
+		"Ukraine": {
+			"mobile": {
+				"CR": 3.5,
+				"CPS": 0.024
+			},
+			"desktop": {
+				"CR": 1.8,
+				"CPS": 0.006
+			}
+		},
+		"Arab Emirates": {
+			"mobile": {
+				"CR": 11.6,
+				"CPS": 0.015
+			},
+			"desktop": {
+				"CR": 1.4,
+				"CPS": 0.010
+			}
+		},
+		"Turkey": {
+			"mobile": {
+				"CR": 1.8,
+				"CPS": 0.007
+			},
+			"desktop": {
+				"CR": 2.1,
+				"CPS": 0.005
+			}
+		},
+		"Japan": {
+			"mobile": {
+				"CR": 1.9,
+				"CPS": 0.011
+			},
+			"desktop": {
+				"CR": 3.4,
+				"CPS": 0.044
+			}
+		},
+		"Egypt": {
+			"mobile": {
+				"CR": 6.05,
+				"CPS": 0.005
+			},
+			"desktop": {
+				"CR": 5.7,
+				"CPS": 0.001
+			}
+		},
+		"Bangladesh": {
+			"mobile": {
+				"CR": 22,
+				"CPS": 0.001
+			},
+			"desktop": {
+				"CR": 7,
+				"CPS": 0.003
+			}
+		},
+		"Argentina": {
+			"mobile": {
+				"CR": 4.8,
+				"CPS": 0.009
+			},
+			"desktop": {
+				"CR": 9,
+				"CPS": 0.001
+			}
+		}
+	}
+}

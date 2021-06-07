@@ -1,0 +1,15 @@
+{"platforms": {
+	"mobile": {
+		"name": {
+			"ru": "Mobile",
+			"en": "Mobile"
+		}
+	},
+	"desktop": {
+		"name": {
+			"ru": "Desktop",
+			"en": "Desktop"
+		}
+	}
+}
+}

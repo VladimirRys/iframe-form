@@ -1,0 +1,27 @@
+extends _base
+
+
+
+block variables
+	-
+		title =	buttonText[lang]
+	block lang
+
+block head
+	link(rel='preconnect' href='https://fonts.gstatic.com')
+	link(href='https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap' rel='stylesheet')
+
+
+block body
+	form(action="" method="POST")
+		include ../includes/platforms
+		include ../includes/country
+		include ../includes/traffic
+		include ../includes/cost
+
+		ul.small
+			each note in notes
+				li
+					small=note[lang]
+
+		a(href="https://app.propush.me/#/signUp").button=title
