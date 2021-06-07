@@ -6,23 +6,23 @@
 	"titles": {
 		"platforms": {
 			"ru": "Тип платформы",
-			"en": ""
+			"en": "Platform type"
 		},
 		"countries": {
 			"ru": "Страна",
-			"en": ""
+			"en": "Country"
 		},
 		"countriesLabel": {
 			"ru": "Выберите страну",
-			"en": ""
+			"en": "Select a country"
 		},
 		"traffic": {
 			"ru": "Количество трафика на ленд",
-			"en": ""
+			"en": "The amount of traffic per landing"
 		},
 		"cost": {
 			"ru": "Ориентировочный доход",
-			"en": ""
+			"en": "Estimated income"
 		}
 	},
 	"traffic": {
