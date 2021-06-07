@@ -77,7 +77,7 @@
 		display: none;
 		padding: 0;
 
-		scrollbar-width: 3px;
+		scrollbar-width: thin;
 		scrollbar-color: $accent-color $border-color;
 
 		&:hover {
@@ -86,13 +86,14 @@
 
 		&::-webkit-scrollbar {
 			width: 23px;
-			height: 80px;
+			// height: 80px;
 			border-radius: 15px;
+			background-color: transparent;
 		}
 
 		&::-webkit-scrollbar-track,
 		&::-webkit-scrollbar-thumb {
-			border: 10px solid rgba(255, 255, 255, 0);
+			border: 10px solid transparent;
 			border-width: 25px 10px;
 			background-clip: padding-box;
 		}
