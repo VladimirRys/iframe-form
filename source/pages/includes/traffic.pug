@@ -1,9 +1,9 @@
 fieldset
 	legend.bold#traffic-title=titles.traffic[lang]
 	- const initValue = traffic.startValue.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
-	input#traffic(type="text" name="traffic" value=initValue inputmode="numeric" pattern="[0-9 ]*", aria-hidden="true").input
+	input#traffic(type="text" name="traffic" value=initValue inputmode="numeric" pattern="[0-9 ]*" aria-hidden="true").input
 
 	.range-slider(style=`--min:${traffic.min}; --max:${traffic.max}; --value:${traffic.startValue}; --text-value:"75"; --suffix:"%"`)
-		input(type='range' min=traffic.min max=traffic.max value=traffic.startValue, name="traffic-range", aria-labelledby="traffic-title")#traffic-range
+		input(type='range' min=traffic.min max=traffic.max value=traffic.startValue, name="traffic-range" aria-labelledby="traffic-title")#traffic-range
 		.range-slider__progress
 
