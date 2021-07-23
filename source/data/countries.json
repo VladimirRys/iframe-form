@@ -7,17 +7,17 @@
 			},
 			"desktop": {
 				"CR": 2.1,
-				"CPS": 0.063
+				"CPS": 0.077
 			}
 		},
 		"Thailand": {
 			"mobile": {
 				"CR": 6.5,
-				"CPS": 0.024
+				"CPS": 0.003
 			},
 			"desktop": {
 				"CR": 7.5,
-				"CPS": 0.012
+				"CPS": 0.017
 			}
 		},
 		"South Africa": {
