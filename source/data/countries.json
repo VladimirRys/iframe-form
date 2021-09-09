@@ -2,302 +2,302 @@
 	"countries": {
 		"USA": {
 			"mobile": {
-				"CR": 2.5,
-				"CPS": 0.114
+				"CR": 0.3,
+				"CPS": 0.077
 			},
 			"desktop": {
-				"CR": 2.1,
-				"CPS": 0.077
+				"CR": 0.3,
+				"CPS": 0.068
 			}
 		},
 		"Thailand": {
 			"mobile": {
-				"CR": 6.5,
-				"CPS": 0.003
+				"CR": 4,
+				"CPS": 0.015
 			},
 			"desktop": {
 				"CR": 7.5,
-				"CPS": 0.017
+				"CPS": 0.018
 			}
 		},
 		"South Africa": {
 			"mobile": {
-				"CR": 4,
+				"CR": 2.5,
 				"CPS": 0.098
 			},
 			"desktop": {
-				"CR": 3.5,
+				"CR": 2.5,
 				"CPS": 0.043
 			}
 		},
 		"Malaysia": {
 			"mobile": {
-				"CR": 15.6,
-				"CPS": 0.007
+				"CR": 3,
+				"CPS": 0.019
 			},
 			"desktop": {
-				"CR": 5,
+				"CR": 3.5,
 				"CPS": 0.017
 			}
 		},
 		"India": {
 			"mobile": {
-				"CR": 21.2,
-				"CPS": 0.001
+				"CR": 5.5,
+				"CPS": 0.006
 			},
 			"desktop": {
-				"CR": 4.7,
-				"CPS": 0.003
+				"CR": 3.5,
+				"CPS": 0.007
 			}
 		},
 		"Mexico": {
 			"mobile": {
-				"CR": 6,
+				"CR": 2.3,
 				"CPS": 0.023
 			},
 			"desktop": {
-				"CR": 6.2,
+				"CR": 2.3,
 				"CPS": 0.003
 			}
 		},
 		"Brazil": {
 			"mobile": {
-				"CR": 4.8,
-				"CPS": 0.016
+				"CR": 4.5,
+				"CPS": 0.008
 			},
 			"desktop": {
-				"CR": 8,
+				"CR": 5.2,
 				"CPS": 0.003
 			}
 		},
 		"Canada": {
 			"mobile": {
-				"CR": 2.4,
+				"CR": 0.45,
 				"CPS": 0.087
 			},
 			"desktop": {
-				"CR": 1.8,
+				"CR": 0.43,
 				"CPS": 0.085
 			}
 		},
 		"Italy": {
 			"mobile": {
-				"CR": 1.98,
-				"CPS": 0.059
+				"CR": 1.3,
+				"CPS": 0.009
 			},
 			"desktop": {
-				"CR": 2.6,
-				"CPS": 0.049
+				"CR": 1.3,
+				"CPS": 0.034
 			}
 		},
 		"Germany": {
 			"mobile": {
-				"CR": 1.8,
-				"CPS": 0.054
+				"CR": 0.6,
+				"CPS": 0.021
 			},
 			"desktop": {
-				"CR": 1.93,
-				"CPS": 0.033
+				"CR": 0.15,
+				"CPS": 0.021
 			}
 		},
 		"New Zealand": {
 			"mobile": {
-				"CR": 2.5,
-				"CPS": 0.102
+				"CR": 0.98,
+				"CPS": 0.09
 			},
 			"desktop": {
-				"CR": 3,
-				"CPS": 0.102
+				"CR": 0.1,
+				"CPS": 0.095
 			}
 		},
 		"Australia": {
 			"mobile": {
-				"CR": 13.2,
-				"CPS": 0.027
+				"CR": 0.86,
+				"CPS": 0.113
 			},
 			"desktop": {
-				"CR": 2.9,
-				"CPS": 0.066
+				"CR": 0.9,
+				"CPS": 0.111
 			}
 		},
 		"Colombia": {
 			"mobile": {
-				"CR": 5.8,
+				"CR": 3.1,
 				"CPS": 0.017
 			},
 			"desktop": {
-				"CR": 10,
-				"CPS": 0.002
+				"CR": 3.1,
+				"CPS": 0.004
 			}
 		},
 		"Peru": {
 			"mobile": {
-				"CR": 5.3,
-				"CPS": 0.019
+				"CR": 3.1,
+				"CPS": 0.008
 			},
 			"desktop": {
-				"CR": 9.6,
-				"CPS": 0.004
+				"CR": 4,
+				"CPS": 0.005
 			}
 		},
 		"United Kingdom": {
 			"mobile": {
-				"CR": 1.9,
-				"CPS": 0.081
+				"CR": 0.33,
+				"CPS": 0.136
 			},
 			"desktop": {
-				"CR": 1.5,
-				"CPS": 0.054
+				"CR": 0.26,
+				"CPS": 0.041
 			}
 		},
 		"Indonesia": {
 			"mobile": {
-				"CR": 19,
-				"CPS": 0.003
+				"CR": 6.7,
+				"CPS": 0.002
 			},
 			"desktop": {
-				"CR": 8,
-				"CPS": 0.003
+				"CR": 5.2,
+				"CPS": 0.002
 			}
 		},
 		"Philippines": {
 			"mobile": {
-				"CR": 8.6,
-				"CPS": 0.009
+				"CR": 5.2,
+				"CPS": 0.01
 			},
 			"desktop": {
-				"CR": 6.3,
-				"CPS": 0.006
+				"CR": 4.6,
+				"CPS": 0.01
 			}
 		},
 		"France": {
 			"mobile": {
-				"CR": 2,
-				"CPS": 0.076
+				"CR": 0.21,
+				"CPS": 0.01
 			},
 			"desktop": {
-				"CR": 1.8,
-				"CPS": 0.026
+				"CR": 1.4,
+				"CPS": 0.006
 			}
 		},
 		"Pakistan": {
 			"mobile": {
-				"CR": 38.4,
+				"CR": 4.1,
 				"CPS": 0.001
 			},
 			"desktop": {
-				"CR": 5.5,
+				"CR": 2.6,
 				"CPS": 0.004
 			}
 		},
 		"Spain": {
 			"mobile": {
-				"CR": 1.9,
+				"CR": 1,
 				"CPS": 0.039
 			},
 			"desktop": {
-				"CR": 2.3,
-				"CPS": 0.008
+				"CR": 1.3,
+				"CPS": 0.01
 			}
 		},
 		"Russian": {
 			"mobile": {
-				"CR": 6.9,
-				"CPS": 0.01
+				"CR": 3.1,
+				"CPS": 0.007
 			},
 			"desktop": {
-				"CR": 3,
+				"CR": 0.5,
 				"CPS": 0.006
 			}
 		},
 		"Poland": {
 			"mobile": {
-				"CR": 2.6,
-				"CPS": 0.038
+				"CR": 1.7,
+				"CPS": 0.006
 			},
 			"desktop": {
-				"CR": 3.6,
+				"CR": 1.3,
 				"CPS": 0.011
 			}
 		},
 		"Nigeria": {
 			"mobile": {
-				"CR": 9.7,
-				"CPS": 0.015
+				"CR": 6,
+				"CPS": 0.017
 			},
 			"desktop": {
-				"CR": 7.5,
-				"CPS": 0.015
+				"CR": 4.2,
+				"CPS": 0.017
 			}
 		},
 		"Ukraine": {
 			"mobile": {
-				"CR": 3.5,
+				"CR": 3.1,
 				"CPS": 0.024
 			},
 			"desktop": {
-				"CR": 1.8,
+				"CR": 0.55,
 				"CPS": 0.006
 			}
 		},
 		"Arab Emirates": {
 			"mobile": {
-				"CR": 11.6,
-				"CPS": 0.015
+				"CR": 0.97,
+				"CPS": 0.005
 			},
 			"desktop": {
 				"CR": 1.4,
-				"CPS": 0.010
+				"CPS": 0.005
 			}
 		},
 		"Turkey": {
 			"mobile": {
 				"CR": 1.8,
-				"CPS": 0.007
+				"CPS": 0.002
 			},
 			"desktop": {
-				"CR": 2.1,
-				"CPS": 0.005
+				"CR": 2.6,
+				"CPS": 0.004
 			}
 		},
 		"Japan": {
 			"mobile": {
-				"CR": 1.9,
-				"CPS": 0.011
+				"CR": 0.5,
+				"CPS": 0.074
 			},
 			"desktop": {
-				"CR": 3.4,
-				"CPS": 0.044
+				"CR": 1.5,
+				"CPS": 0.037
 			}
 		},
 		"Egypt": {
 			"mobile": {
-				"CR": 6.05,
-				"CPS": 0.005
+				"CR": 1.2,
+				"CPS": 0.007
 			},
 			"desktop": {
-				"CR": 5.7,
-				"CPS": 0.001
+				"CR": 1.3,
+				"CPS": 0.002
 			}
 		},
 		"Bangladesh": {
 			"mobile": {
-				"CR": 22,
-				"CPS": 0.001
+				"CR": 6.1,
+				"CPS": 0.005
 			},
 			"desktop": {
-				"CR": 7,
-				"CPS": 0.003
+				"CR": 3.5,
+				"CPS": 0.001
 			}
 		},
 		"Argentina": {
 			"mobile": {
-				"CR": 4.8,
-				"CPS": 0.009
+				"CR": 4.75,
+				"CPS": 0.006
 			},
 			"desktop": {
-				"CR": 9,
-				"CPS": 0.001
+				"CR": 3.7,
+				"CPS": 0.003
 			}
 		}
 	}
